@@ -1,0 +1,23 @@
+{
+    "mysql":{
+        "server_debian_password": "hoge",
+        "server_root_password":"hoge",
+        "server_repl_password":"hoge"
+    },
+    "newrelic":{
+        "server_monitoring": {
+            "license":"キー"
+        },
+        "application_monitoring":{
+            "license":"キー"
+        }
+    },
+    "run_list":[
+        "yum::remi",
+        "yum::epel",
+        "mysql::server",
+        "apache2",
+        "php",
+        "newrelic"
+    ]
+}
